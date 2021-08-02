@@ -1,0 +1,56 @@
+:root {
+    --bg-color: #10151a;
+    --fg-color: white;
+    --error-color: red;
+    --btn-color: #f646aa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--fg-color);
+    background-color: var(--bg-color);
+}
+
+form {
+    width: 40%;
+    margin: auto;
+}
+
+div {
+    padding: 1em;
+    margin: 1em;
+}
+
+input {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 1em;
+}
+
+button {
+    background-color: var(--btn-color);
+    color: white;
+    border: none;
+    border-radius: 12px;
+}
+
+.alert {
+    padding: 1em;
+    margin: 1em 0;
+}
+
+.alert-success {
+    background-color: lightseagreen;
+}
+
+.alert-info {
+    background-color: cyan;
+}
+
+.alert-danger {
+    background-color: magenta;
+}
