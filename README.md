@@ -18,7 +18,6 @@ open `chat_app/__init__.py` and add the email(the one the sends the registered u
 ```bash
 python run.py
 ```
-Go to http://localhost:5000/register
 
 # Features
 * Registration
