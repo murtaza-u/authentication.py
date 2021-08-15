@@ -25,11 +25,11 @@ bcrypt = Bcrypt(app)
 
 
 def run():
-    from chat_app.auth import auth
-    from chat_app.user import user
+    from auth_app.auth import auth
+    from auth_app.user import user
 
-    import chat_app.auth.routes
-    import chat_app.user.routes
+    import auth_app.auth.routes
+    import auth_app.user.routes
 
     app.register_blueprint(auth)
     app.register_blueprint(user)

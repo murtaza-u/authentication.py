@@ -1,7 +1,7 @@
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
 from flask_login import UserMixin
 
-from chat_app import db, app, login_manager
+from auth_app import db, app, login_manager
 
 
 @login_manager.user_loader

@@ -13,7 +13,7 @@
                 <!-- navbar brand -->
                 <a class="navbar-brand" href="#intro">
                     <span class="text-secondary fw-bold">
-                        Chat App
+                        Authentication App
                     </span>
                 </a>
                 <!-- toggle button for mobile nav -->
@@ -25,10 +25,6 @@
                 <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
                     <ul class="navbar-nav">
                         {% if current_user.is_authenticated %}
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Chat</a>
-                            </li>
-
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ url_for('user.account') }}">Account</a>
                             </li>

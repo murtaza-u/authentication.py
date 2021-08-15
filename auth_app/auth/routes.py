@@ -1,11 +1,11 @@
 from flask import render_template, flash, redirect, url_for, request
 from flask_login import logout_user, current_user, login_user
 
-from chat_app import db, bcrypt
-from chat_app.auth import auth
-from chat_app.auth.utils import send_reset_email
-from chat_app.auth.forms import RegistrationForm, LoginForm, ResetRequestForm, ResetPasswordForm
-from chat_app.user.models import User
+from auth_app import db, bcrypt
+from auth_app.auth import auth
+from auth_app.auth.utils import send_reset_email
+from auth_app.auth.forms import RegistrationForm, LoginForm, ResetRequestForm, ResetPasswordForm
+from auth_app.user.models import User
 
 
 @auth.route('/register', methods=['GET', 'POST'])

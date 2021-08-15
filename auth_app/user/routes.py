@@ -1,10 +1,10 @@
 from flask import render_template, url_for, flash, redirect
 from flask_login import login_required, current_user
 
-from chat_app import db, bcrypt
-from chat_app.user import user
-from chat_app.user.forms import ChangeEmailForm, ChangePasswordForm, UpdateProfilePictureForm
-from chat_app.user.utils import save_picture
+from auth_app import db, bcrypt
+from auth_app.user import user
+from auth_app.user.forms import ChangeEmailForm, ChangePasswordForm, UpdateProfilePictureForm
+from auth_app.user.utils import save_picture
 
 
 @user.route('/account', methods=['GET', 'POST'])
