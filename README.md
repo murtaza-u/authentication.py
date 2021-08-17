@@ -12,7 +12,7 @@ $ python
 >>> from auth_app.user.models import User
 >>> db.create_all()
 ```
-open `auth_app/__init__.py` and add the email(the one the sends the registered user the link to reset his/her password) info(Make sure to allow less secured app is enabled incase of gmail)
+open `auth_app/__init__.py` and add the email info(the one the sends the registered user the link to reset his/her password and make sure to allow less secured app is enabled incase of gmail)
 
 # run
 ```bash
